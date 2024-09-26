@@ -21,7 +21,7 @@ print("Programa CRUD completo sobre clientes")
 print("#######################################")
 
 while True:
-
+ 
     print("Selecciona una opcion")
     print("1.-Insertar nuevo cliente")
     print("2.-Leer clientes existentes")
@@ -39,20 +39,58 @@ while True:
         email = input("Introduce un nuevo email: ")
         ciudad = input("Introduce una nueva población: ")
         fecha_nacimiento = input("Introduce una nueva fecha de nacimiento: ")
-        peticion = "INSERT INTO clientes VALUES(NULL,'"+nombre+"','"+apellidos+"','"+email+"','"+ciudad+"','"+fecha_nacimiento+"');"
+        peticion = "INSERT INTO clientes VALUES (NULL,'"+nombre+"','"+apellidos+"','"+email+"','"+ciudad+"','"+fecha_nacimiento+"');"
         cursor = conexion.cursor()
-        cursor.execute = (peticion)
+        cursor.execute(peticion)
         conexion.commit()
     elif opcion == "2":
         print("Vamos a listar los clientes")
-        peticion = ("SELECT * FROM 'clientes'")
+        peticion = "SELECT * FROM clientes;"
         cursor = conexion.cursor()
-        cursor.execute = (peticion)
-        conexion.commit()
+        cursor.execute(peticion)
+        filas = cursor.fetcha11()
+        for fila in filas:
+            print("#######################################")
+            print("El identificador es: ",fila[0])
+            print("El nombre es: ",fila[1])
+            print("El apellido es: ",fila[2])
+            print("El email es: ",fila[3])
+            print("La ciudad es: ",fila[4])
+            print("La fecha de nacimiento es: ",fila[5])
     elif opcion == "3":
         print("Vamos a actualizar a un cliente")
+        identificador = input("Introduce el id del cliente que vas a actualizar")
+        nombre = input("Introduce un nuevo nombre: ")
+        apellidos = input("Introduce los nuevos apellidos: ")
+        email = input("Introduce el email: ")
+        ciudad = input("Introduce la nueva ciudad: ")
+        fecha_nacimiento = input("Introduce la nueva fecha de nacimiento: ")
+        peticion = """
+                UPDATE clientes
+                SET
+                nombre = '"""+nombre+"""',
+                apelidos = '"""+apellidos+"""',
+                email = '"""+email+"""',
+                ciudad = '"""+ciudad+"""',
+                fecha_nacimiento = '"""+fecha_nacimiento+"""'
+                WHERE Identificador = """+identificador+"""
+        ;"""
+        cursor = conexion.cursor()
+        cursor.execute(peticion)
+        conexion.commit()
     elif opcion == "4":
         print("Vamos a eliminar un cliente")
+        identificador = input("Introduce el id del cliente que vas a eliminar")
+        try:
+            peticion = """
+                    DELETE FROM clientes
+                    WHERE Identificador = """+identificador+"""
+                ;"""
+            cursor = conexion.cursor()
+            cursor.execute(peticion)
+            conexion.commit()
+        except:
+            print("La operación no se pudo realizar por un error en la base de datos")
     elif opcion == "5":
         exit()
     else:

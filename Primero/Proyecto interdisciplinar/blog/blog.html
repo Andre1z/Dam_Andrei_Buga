@@ -3,6 +3,28 @@
  <head>
    <title>Blog</title>
    <meta charset="utf-8">
+   <style>
+	body {
+         background-color:grey;
+	 font-family:arial;
+	}
+	header,main,footer{
+	 padding:20px;
+	 margin:auto;
+	 background-color:black;
+	 color:white;
+	 margin:auto;
+	 width:800px;
+	 text-align:center;
+	}
+	article{
+	 background:#225586;
+	 text-align:justify;
+	 box-sizing:border-box;
+	 padding:20px;
+	 margin:10px 0px;
+	}
+    </style>
   </head>
   <body>
     <header>
@@ -11,32 +33,30 @@
     </header>
     <main>
       <section>
-	<article>
-	 <h3>Este es mi articulo</h3>
-	 <time>2024-09-26</time>
-	 <p>Este es el contenido de mi blog</p>
-	</article>
+	<!-- Démenos cuenta de que la sección está VACIA -->
       </section>
     </main>
     <footer>
       (c) 2024 Andrei Buga
     </footer>
+    <script>
+	fetch("http://127.0.0.1:5000")
+	.then(function(response){
+	  return response.json();
+	})
+	.then(function(entradas){
+	  console.log(entradas)
+	  entradas.forEach(function(entrada){
+	    let seccion = document.querySelector("section")
+	    seccion.innerHTML += `
+		<article>
+		  <h3>`+entrada.titulo+`</h3>
+		  <time>`+entrada.fecha+`</time>
+		  <p>`+entrada.contenido+`</p>
+		</article>
+	    `;
+	   })
+	  })	      
+    </script>
    </body>
 </html>
-
-    <style>
-	body {
-         background-color:grey;
-	 font-family:arial;
-	 text-align:center;
-	}
-	header,main,footer{
-	 padding:20px;
-	 margin:auto;
-	 background-color:black;
-	 color:white;
-	 margin:auto;
-	}
-	h1{
-	 font-family:C:\Users\Usuario\OneDrive\Documents\Codigo De Creador By LEFFIRION\BurbankBigCondensed-Black;
-    </style>
