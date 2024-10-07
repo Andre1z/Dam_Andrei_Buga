@@ -1,8 +1,5 @@
 import calendar
-
 def display_calendar():
-
-
     year = int(input("Porfavor introduzca un año: "))
     month = int(input("Porfavor introduzca un mes (1-12): "))
 

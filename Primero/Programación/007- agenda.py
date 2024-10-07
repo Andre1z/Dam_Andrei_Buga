@@ -1,6 +1,6 @@
 '''
     Programa agenda con colecciones bidimensionales
-    (c( 2024 Andrei Buga
+    (c) 2024 Andrei Buga
 '''
 
 print("Programa agenda (c) 2024 Andrei Buga")

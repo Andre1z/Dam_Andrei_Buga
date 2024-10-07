@@ -1,11 +1,11 @@
 '''
     Programa agenda
-    (c) 2024 Jose Vicente Carratalá
+    (c) 2024 Andrei Buga
 '''
 # Bienvenida ###############################################
 
 TITULO = "Programa agenda"
-AUTOR = "Jose Vicente Carratalá"
+AUTOR = "Andrei Buga"
 print(TITULO,"por",AUTOR)
 
 # Estructura de control de ejecución infinita #############

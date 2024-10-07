@@ -1,7 +1,7 @@
 '''
     Programa agenda con SQLite
     (c) 2024 por Andrei Buga
-    v1 Empezando en clase
+    v1 Empezado en clase
 '''
 import sqlite3                                          
 conexion = sqlite3.connect('empresa.db')
