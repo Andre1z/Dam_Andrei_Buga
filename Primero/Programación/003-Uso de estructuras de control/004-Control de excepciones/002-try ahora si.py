@@ -1,6 +1,6 @@
-print("inicio del programa")
+print("Inicio del programa")
 try:
-    print(3/0)
+    print(100/0)
 except:
-    print("Ha ocurrido un error, pero no pasa nada porque yo continúo")
-print("final del programa")
+    print("Ha ocurrido un error, continuamos")
+print("Final del programa")

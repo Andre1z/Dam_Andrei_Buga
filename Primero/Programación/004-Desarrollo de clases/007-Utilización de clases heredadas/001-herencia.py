@@ -1,4 +1,4 @@
-class Empleado:
+class Empleados:
     def __init__(self,
                  nuevonombre,
                  nuevosapellidos,
@@ -46,14 +46,14 @@ class Cliente:
         if nuevaedad == self.edad + 1:
             self.edad = nuevaedad
         else:
-            print("operación no permitida")
+            print("Operación no permitida")
 
 cliente1 = Cliente(
-    "Jose Vicente",
-    "Carratalá",
-    "info@jocarsa.com",
-    6535646,
-    20
+    "Andrei",
+    "Buga",
+    "bugaandrei1@gmail.com",
+    12893123,
+    18
     )
 
 print(cliente1.edad)

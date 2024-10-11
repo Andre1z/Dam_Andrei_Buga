@@ -1,4 +1,4 @@
-archivo = open("miqueridodiario.txt",'r')
+archivo = open("misjugadoresfavoritos.txt",'r')
 
 lineas = archivo.readlines()
 

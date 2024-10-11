@@ -1,14 +1,16 @@
 '''
     Programa agenda
-    (c) 2024 Jose Vicente Carratalá
+    (c) 2024 Andrei Buga
+    Las lineas que queramos
 '''
 # Bienvenida #################################################
 
 TITULO = "Programa agenda"
-AUTOR = "Jose Vicente Carratalá"
-print(TITULO,"por",AUTOR)
+CREADOR = "Andrei Buga"
+print(TITULO,"por,",CREADOR)
 
 # Estructura de control de ejecución infinita ################
+# Este es otro comentario 
 
 while(True):
 
@@ -23,7 +25,7 @@ while(True):
 
     # El usuario debe escoger una opción de estas 5
 
-    opcion = input("Por favor seleccione una opción (1-5):")
+    opcion = input("Por favor seleccione una opción (1-5): ")
     print("Usted a seleccionado la opción número:",opcion)
 
     #### Selecciono la operación a realizar #######################################

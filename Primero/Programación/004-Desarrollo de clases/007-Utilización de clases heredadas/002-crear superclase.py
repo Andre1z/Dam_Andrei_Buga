@@ -26,7 +26,7 @@ class Persona:
         if nuevaedad == self.edad + 1:
             self.edad = nuevaedad
         else:
-            print("operación no permitida")
+            print("Operación no permitida")
             
 class Empleado(Persona):
     def __init__(self):

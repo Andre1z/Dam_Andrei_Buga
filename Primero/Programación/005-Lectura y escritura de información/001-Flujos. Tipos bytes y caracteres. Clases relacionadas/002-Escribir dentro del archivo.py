@@ -1,5 +1,5 @@
-archivo = open("clientes.txt",'w')
+archivo = open("jugadores.txt",'w')
 
-archivo.write("Este es un texto que escribo")
+archivo.write("Este es un texto que tecleo sobre jugadores")
 
 archivo.close()

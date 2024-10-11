@@ -26,7 +26,7 @@ class Persona:
         if nuevaedad == self.edad + 1:
             self.edad = nuevaedad
         else:
-            print("operación no permitida")
+            print("Operación no permitida")
             
 class Empleado(Persona):
     def __init__(self):
@@ -37,11 +37,11 @@ class Cliente(Persona):
         super()
 
 cliente1 = Cliente()
-cliente1.setNombre("Jose Vicente")
+cliente1.setNombre("Andrei")
 print(cliente1.getNombre())
 
 empleado1 = Empleado()
-empleado1.setNombre("Juan")
+empleado1.setNombre("Manolo")
 print(empleado1.getNombre())
     
 

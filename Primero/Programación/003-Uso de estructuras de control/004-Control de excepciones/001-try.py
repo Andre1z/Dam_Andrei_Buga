@@ -1,3 +1,3 @@
 print("inicio del programa")
-print(3/0)
-print("final del programa")
+print(100/0)
+print("Final del programa")

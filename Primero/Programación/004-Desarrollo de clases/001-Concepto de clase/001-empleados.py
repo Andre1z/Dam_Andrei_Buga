@@ -1,4 +1,4 @@
-class Cliente:
+class Empleados:
     def __init__(self,
                  nuevonombre,
                  nuevosapellidos,
@@ -20,16 +20,20 @@ class Cliente:
             " - Teléfono:",
             self.telefono)
 
-cliente1 = Cliente(
-    "Jose Vicente",
-    "Carratalá",
-    "info@jocarsa.com",
+empleado1 = Empleados(
+    "Andrei",
+    "Buga",
+    "bugaandrei1@gmail.com",
     6535646
     )
-
-print(cliente1.nombre)
-cliente1.nombre = "Juan"
-print(cliente1.nombre)
+empleado2 = Empleados(
+    "Manolo",
+    "Martinez",
+    "mmartinez@ilerna.es",
+    6436546
+    )
+empleado1.dameDatos()
+empleado2.dameDatos()
       
         
 

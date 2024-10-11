@@ -1,2 +1,2 @@
-archivo = open("clientes.txt",'w')
+archivo = open("jugadores.txt",'w')
 
