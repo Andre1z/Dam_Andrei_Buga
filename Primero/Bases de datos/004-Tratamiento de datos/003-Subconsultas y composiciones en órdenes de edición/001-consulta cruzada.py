@@ -1,25 +1,28 @@
 import mysql.connector
 
 connection = mysql.connector.connect(
-    host='localhost',
-    user='miempresa',
+    host='localhost',   
+    user='miempresa',   
     password='miempresa',
-    database='miempresa'
+    database='miempresa' 
 )
 
-cursor = connection.cursor(dictionary = True)
+cursor = connection.cursor()
 
-while True:
-    print("Programa de gestion de clientes")
-    print("1.-Insertar un cliente:")
-    print("2.-Listado de todos los clientes:")
-    print("3.-...")
-    opcion = input("Selecciona una opcion: "+opcion)
+cursor.execute('''
+    SELECT 
+    pedidos.fecha,
+    clientes.nombre,
+    clientes.apellidos
+    FROM `pedidos` 
+    LEFT JOIN clientes
+    ON pedidos.clientes_apellidos = clientes.Identificador
+''')
 
-    if opcion == "1"
-    print("Vamos a insertar un cliente")
-    nombre = input("Introduce un nombre: ")
-    apellidos = input("Introduce los apellidos: ")
-    email = input("Introduce un email: ")
-    ciudad = input("Introduce una ciudad: ")
-    fecha_nacimiento = input("Introduce una fecha de nacimiento: ")
+row = cursor.fetchone()
+
+while row:
+    print(row)
+    row = cursor.fetchone()
+
+connection.close()
