@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <nombre>
+            Andrei
+        </nombre>
+        <apellidos>
+            Buga
+        </apellidos>
+        <telefono>
+            643645612
+        </telefono>
+        <email>
+            bugaandrei1@gmail.com
+        </email>
+    </cliente>
+    <cliente>
+        <nombre>
+            Andrei
+        </nombre>
+        <apellidos>
+            Buga
+        </apellidos>
+        <telefono>
+            643645612
+        </telefono>
+        <email>
+            bugaandrei1@gmail.com
+        </email>
+    </cliente>
+</clientes>

@@ -1,0 +1,10 @@
+Cliente1:
+Nombre: Manolo
+Apellidos: Martinez
+Teléfono: 53543512
+email: mmartinez@ilerna.es
+Cliente2:
+Nombre: Paco
+Apellidos: Gonzalez
+Teléfono: 62436462
+email: paco@gonzalez.com
