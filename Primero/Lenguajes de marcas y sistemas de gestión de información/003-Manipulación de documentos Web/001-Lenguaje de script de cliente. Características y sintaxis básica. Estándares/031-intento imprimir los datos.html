@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang= "es">
+ <head>
+   <title>Aprendiendo Javascript</title>
+   <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+	fetch("http://127.0.0.1:5000")
+	.then(function(response){
+	return response.json()
+	})
+	.then(function(datos){
+	document.write(datos)
+	})
+    </script>
+   </body>
+</html>
