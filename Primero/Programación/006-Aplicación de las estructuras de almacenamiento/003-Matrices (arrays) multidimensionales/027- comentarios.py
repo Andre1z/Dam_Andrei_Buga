@@ -1,6 +1,6 @@
 '''
-    Programa agenda con colecciones bidimensionales
-    (c) 2024 Jose Vicente Carratalá
+    Programa de colecciones bidimensionales
+    (c) 2024 Andrei Buga
 '''
 
 import platform                                                             # Importo la libreria plataforma para poder detectar en que navegador estoy

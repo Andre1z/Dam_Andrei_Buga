@@ -1,2 +1,1 @@
-Este es un texto que tecleo sobre jugadoresEste es otro texto sobre jugadores
-Este es otro texto para los jugadores 
+Este es un texto que tecleo sobre jugadores

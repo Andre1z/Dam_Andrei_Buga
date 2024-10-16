@@ -10,12 +10,12 @@ class Cliente:                                                                  
 agenda = []                                                                     # Creo una agenda que de momento esta vacia
 
 print("###############################################")                        # Creo un mensaje de bienvenida
-print("Programa agenda v0.1 por Jose Vicente Carratala")
+print("Programa agenda v1 por Andrei Buga")
 print("###############################################")
 
 while True:                                                                     # Escribo un bucle infinito
     
-    print("Menú de navegación")                                                 # Imprimo un menu de navegacion
+    print("Menú principal")                                                 # Imprimo un menu de navegacion
     print("1.-Introduce un registro")
     print("2.-Listado de registros")
     print("3.-Guardar registros")
