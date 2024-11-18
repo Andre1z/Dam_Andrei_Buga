@@ -1,0 +1,43 @@
+main .contenedor article{
+    padding-top:50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px; /* Espaciado entre columnas */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    align-items: center;
+}
+main .contenedor h2{
+    color:#C2A464;
+    text-align:left;
+    font-family:TrajanPro3Bold;
+}
+main .contenedor h2 span{
+    font-size:x-large;
+}
+main .contenedor #arquitecturah2{
+    margin-top:-17px;
+    font-size:40px;
+}
+main .contenedor article p{
+    font-family:sans-serif;
+    font-size:20px;
+}
+main .contenedor article a{
+    color:#C2A464;
+    text-decoration:none;
+}
+main .contenedor article a button{
+    color:Black;
+    font-family:TrajanPro3Bold;
+    background-color:transparent;
+    border-block-color:black;
+    border-width:4px;
+    font-size:20px;
+}
+main .contenedor article img{
+    height:300px;
+    margin-left:66px;
+}

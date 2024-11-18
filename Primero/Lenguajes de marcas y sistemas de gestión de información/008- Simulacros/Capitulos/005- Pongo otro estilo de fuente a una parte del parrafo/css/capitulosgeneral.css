@@ -1,0 +1,25 @@
+main .heroe{
+    text-align:center;
+    margin:0px;
+    padding:0px;
+}
+main .heroe .Capitulosh2 h2{
+    color:#c2a464;
+    text-transform:uppercase;
+    font-size:80px;
+    margin:18px;
+    padding:10px;
+    font-family:TrojanPro3Bold;
+}
+main .heroe .Parrafo1 p{
+    font-family:MonotypeRItalic;
+    font-size:40px;
+    margin:0px;
+    padding:5px;
+}
+main .heroe p{
+    color:white;
+}
+main .heroe .Parrafo2, .Parrafo3{
+    font-size:20px;
+}
