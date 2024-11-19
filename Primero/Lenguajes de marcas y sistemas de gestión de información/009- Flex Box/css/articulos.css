@@ -1,0 +1,39 @@
+.contenedor article #primerarticuloh3{
+    font-family:TrajanPro3Bold;
+    color:#c2a464;
+    font-size:40px;
+}
+.contenedor article #primerarticuloh3 #diferente{
+    font-size:x-large;
+    font-size:21px;
+    margin-bottom:-45px;
+}
+.contenedor article #primerarticulop{
+    font-family:sans-serif;
+    font-size:20px;
+    margin-left:20px;
+}
+article #primerarticulop a{
+    text-decoration:none;
+    color:#c2a464;
+}
+.contenedor article #primerarticuloboton button{
+    color:black;
+    text-transform:uppercase;
+    background-color:white;
+    font-size:20px;
+    font-family:TrojanPro3Bold;
+}
+.contenedor article{
+	display: grid;
+	grid-row: row;
+	grid: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    margin:10px;
+}
+.contenedor article #primerarticuloimg{
+    margin-left:400px;
+    margin-top:10px;
+}
