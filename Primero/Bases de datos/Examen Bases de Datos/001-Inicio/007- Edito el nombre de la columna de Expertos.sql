@@ -1,0 +1,1 @@
+ALTER TABLE `expertos` CHANGE `capitulo_experto` `identificador_capitulos` INT(100) NOT NULL;

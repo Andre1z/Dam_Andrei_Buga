@@ -1,0 +1,1 @@
+INSERT INTO `expertos` (`Identificador`, `nombre`, `identificador_capitulos`) VALUES (NULL, 'Enzo Martinez', '4');

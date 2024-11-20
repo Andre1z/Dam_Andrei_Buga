@@ -1,0 +1,1 @@
+CREATE TABLE `examen_bd_capitulos`.`capitulos` (`identificador` INT NOT NULL AUTO_INCREMENT , `titulo` VARCHAR(150) NOT NULL , `subtitulo` VARCHAR(150) NOT NULL , `texto` TEXT NOT NULL , PRIMARY KEY (`identificador`)) ENGINE = InnoDB;

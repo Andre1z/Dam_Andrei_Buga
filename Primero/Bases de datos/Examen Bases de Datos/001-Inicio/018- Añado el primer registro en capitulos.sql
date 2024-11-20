@@ -1,0 +1,1 @@
+INSERT INTO `capitulos` (`identificador`, `titulo`, `subtitulo`, `texto`, `capitulos_experto`, `capitulos_capitulo`) VALUES (NULL, 'Las Rocas', 'de la catedral', 'el origen de la piedra que conforma la Catedral, sus propiedades, la forma de trabajarla.', '3', '2');

@@ -1,0 +1,1 @@
+INSERT INTO `capitulo` (`Identificador`, `nombre`, `identificador_captitulos`) VALUES (NULL, 'Quinto Capitulo', '5');
