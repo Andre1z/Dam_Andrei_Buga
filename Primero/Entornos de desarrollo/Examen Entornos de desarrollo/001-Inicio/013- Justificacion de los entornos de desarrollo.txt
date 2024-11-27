@@ -1,0 +1,3 @@
+Python: He usado IDLE para Python porque ya venia cuando instalabas el mismo lenguaje de programación.
+HTML, CSS, JS, SQL: He usado VSC (Visual Studio Code) porque es el que mas me ha llamado la atención de todos, porque te colorea, te sangra correctamente, te dice en que linea tienes el fallo y porque.
+JAVA: He usado Netbeans porque te guia mucho a la hora de programar con JAVA, te dice en que has fallado y te da buenos consejos.

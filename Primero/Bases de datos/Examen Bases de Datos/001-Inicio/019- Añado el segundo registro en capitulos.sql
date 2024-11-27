@@ -1,0 +1,1 @@
+INSERT INTO `capitulos` (`identificador`, `titulo`, `subtitulo`, `texto`, `capitulos_experto`, `capitulos_capitulo`) VALUES (NULL, 'El rio', 'El salto del agua', 'El salto del agua es una caída de agua (cascada) del rio.', '5', '3');

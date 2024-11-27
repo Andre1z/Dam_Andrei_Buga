@@ -1,0 +1,1 @@
+ALTER TABLE `capitulos` ADD CONSTRAINT `capitulos a expertos` FOREIGN KEY (`capitulos_experto`) REFERENCES `expertos`(`Identificador`) ON DELETE RESTRICT ON UPDATE RESTRICT;

@@ -1,0 +1,1 @@
+INSERT INTO `capitulos` (`identificador`, `titulo`, `subtitulo`, `texto`, `capitulos_experto`, `capitulos_capitulo`) VALUES (NULL, 'El origen de la catedral', 'Siglo XX', 'Nos acercaremos a los orígenes de la Catedral de Burgos, sus momentos clave, su milenario archivo y la revolución del gótico.', '1', '4');
