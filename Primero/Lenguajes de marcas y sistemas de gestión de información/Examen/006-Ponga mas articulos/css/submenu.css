@@ -1,0 +1,10 @@
+header .submenu nav ul{
+    text-decoration:none;
+    text-align:center;
+    padding:0px;
+}
+header .submenu nav ul li{
+    margin-left:10px;
+    display:inline-block;
+    font-family:TrojanPro3Bold;
+}
