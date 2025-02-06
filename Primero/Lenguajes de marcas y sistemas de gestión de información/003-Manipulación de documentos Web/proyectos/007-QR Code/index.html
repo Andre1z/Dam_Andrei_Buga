@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+	    background-image:url('fondo.jpg');
+            background-size: cover; /* Makes the image cover the whole page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents image repetition */
+            height: 100vh;
+        }
+        input {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+        img {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>QR Code Generator</h2>
+    <input type="text" id="url" placeholder="Enter URL here">
+    <br>
+    <button onclick="generateQR()">Generate QR Code</button>
+    <br>
+    <img id="qrImage" style="display: none;">
+
+    <script>
+        function generateQR() {
+            const url = document.getElementById("url").value;
+            if (!url) {
+                alert("Please enter a URL");
+                return;
+            }
+            
+            fetch("http://127.0.0.1:5000/generate_qr", {
+    method: "POST",
+    body: new URLSearchParams({ "url": url }),
+    headers: { "Content-Type": "application/x-www-form-urlencoded" }
+})
+            .then(response => response.blob())
+            .then(blob => {
+                const imgElement = document.getElementById("qrImage");
+                imgElement.src = URL.createObjectURL(blob);
+                imgElement.style.display = "block";
+            })
+            .catch(error => console.error("Error generating QR:", error));
+        }
+    </script>
+
+</body>
+</html>
