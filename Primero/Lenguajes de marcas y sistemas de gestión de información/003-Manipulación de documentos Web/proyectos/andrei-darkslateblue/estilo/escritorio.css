@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+/* General Styles */
+body, html {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Header */
+header {
+    min-height: 50px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 24px;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+
+/* Navigation */
+nav {
+    width: 20%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: white;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffdc00;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section */
+section {
+    width: 80%;
+    background: white;
+    height: 100%;
+    color: #333;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2575fc;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table thead tr {
+    background: #6a11cb;
+    color: white;
+}
+
+table thead tr td {
+    padding: 10px;
+    font-weight: bold;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #f1f1f1;
+}
+
+table tbody tr:nth-child(even) {
+    background: white;
+}
+
+table tbody tr td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+table tbody tr:hover {
+    background: rgba(37, 117, 252, 0.1);
+}
+
+/* Floating Add Button */
+section #nuevo {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+section #nuevo:hover {
+    background: #2575fc;
+    transform: scale(1.1);
+}
+
+/* Form Styling */
+form input, form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+}
+
+form input[type="submit"] {
+    background: #6a11cb;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #2575fc;
+    transform: scale(1.05);
+}
+
+/* Misc */
+td {
+    transition: all 0.3s;
+}
+
+.celdaactiva {
+    background: yellow;
+    transform: scale(1.1);
+}
+
+.destacado {
+    background: white;
+    color: #6a11cb;
+}
+
+/* Print Styles */
+@media print {
+    header, nav { display: none; }
+    body, html { background: white; }
+    main, section {
+        display: block;
+        width: 100%;
+    }
+    #tablapie {
+        position: absolute;
+        bottom: 50px;
+        width: 95%;
+    }
+    h1 {
+        text-align: center;
+        font-size: 48px;
+    }
+}
+
+/* Logo */
+#logo {
+    width: 60px;
+}
+
+/* Centering Header */
+h1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+/* Logout */
+#cerrarsesion a {
+    color: inherit;
+    text-decoration: none;
+}
