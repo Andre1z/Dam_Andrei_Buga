@@ -1,75 +1,85 @@
 <?php
+// Include the database configuration
+include "config/config.php";
 
-// Este archivo carga el contenido interno de la tabla
+// Check if the 'tabla' parameter is set
+if (isset($_GET['tabla'])) {
+    $tabla = $_GET['tabla'];
 
-//include "utilidades/error.php";                           // Incluyo los mensajes de error
-include "config/config.php";                          // Traigo la conexión a la base de datos
+    // Pagination logic
+    $offset = isset($_SESSION['pagina']) ? $_SESSION['pagina'] * 10 : 0;
 
-$peticion = "
-	SELECT * 
-	FROM ".$_GET['tabla']." 
-	LIMIT 10  
-	OFFSET ".($_SESSION['pagina']*10)." 
-	";															// Selecciono todo de una tabla dinámica
-$resultado = $conexion->query($peticion);			// Ejecuto la petición contra la base de datos
+    // Main query to fetch data from the specified table
+    $peticion = "
+        SELECT * 
+        FROM $tabla 
+        LIMIT 10  
+        OFFSET $offset
+    ";
+    $resultado = $conexion->query($peticion);
 
-while ($fila = $resultado->fetch_assoc()) {		// Para cada resultado obtenido
-	$identificador = "";									// Creo una variable llamada identificador
-	echo "<tr>";											// Comienzo una fila de tabla
-	foreach($fila as $clave=>$valor){				// Para cada uno de los campos
-		if($clave == "Identificador"){				// Si la clave es Identificador
-			$identificador = $valor;					// A la variable identificador le pongo valor
-		}
-		if(!str_contains($clave,"imagen")){						// Si el campo es menor que 300 caracteres
-  			if(str_contains($clave,"_")){
-  				$explotado = explode("_",$clave);
-  				$tabla = $explotado[0];
-  				$columna = $explotado[1];
-  				////////////// SUBCONSULTA ///////////
-	  			$peticion2 = "
-	  				SELECT ".$columna." 
-	  				FROM ".$tabla." 
-	  				WHERE Identificador = ".$valor.";";
-	  			$resultado2 = $conexion->query($peticion2);
-	  			while ($fila2 = $resultado2->fetch_assoc()) {
-	  				echo "<td>".$fila2[$columna]."</td>";
-	  			}
-	  			////////////// SUBCONSULTA ///////////
-  			
-  			
-  			}else{
-  				echo "<td
-	  				tabla='".$_GET['tabla']."'
-	  				columna = '".$clave."'
-	  				identificador = '".$identificador."'
-	  			>".$valor."</td>";				// Pongo el valor en una columna
-  			}
-  			
-  		}else{												// En caso contrario
-  		if($valor == ""){
-  		echo "<td>
-  			<img src='./img/placeholder.jpg'>
-  			</td>";	
-  		}else{
-  			echo "<td>
-  			<img src='../static/".$valor."'>
-  			</td>";											// Cargo los datos como imagen y no como texto
-  		}
-  			
-  		}
-  	}
-  	echo "
-	<td>
-		<a href='crud/eliminar.php?tabla=".$_GET['tabla']."&Identificador=".$identificador."'>
-			<button class='eliminar'>
-				X
-			</button>
-		</a>
-	</td>";													// Creo un boton de eliminar con los datos correcto
-  echo "</tr>";											// Cierro la fila html
+    if ($resultado->num_rows > 0) {
+        while ($fila = $resultado->fetch_assoc()) {
+            $identificador = "";
+            echo "<tr>";
+            foreach ($fila as $clave => $valor) {
+                if ($clave == "Identificador") {
+                    $identificador = $valor;
+                }
+
+                // Handle non-image columns
+                if (!str_contains($clave, "imagen")) {
+                    if (str_contains($clave, "_")) {
+                        // Handle subqueries for related tables
+                        $explotado = explode("_", $clave);
+                        $tabla_relacionada = $explotado[0];
+                        $columna_relacionada = $explotado[1];
+
+                        $peticion2 = "
+                            SELECT $columna_relacionada 
+                            FROM $tabla_relacionada 
+                            WHERE Identificador = $valor;
+                        ";
+                        $resultado2 = $conexion->query($peticion2);
+                        while ($fila2 = $resultado2->fetch_assoc()) {
+                            echo "<td>{$fila2[$columna_relacionada]}</td>";
+                        }
+                    } else {
+                        // Display regular columns
+                        echo "<td
+                            tabla='$tabla'
+                            columna='$clave'
+                            identificador='$identificador'
+                        >$valor</td>";
+                    }
+                } else {
+                    // Handle image columns
+                    if (empty($valor)) {
+                        echo "<td><img src='./img/placeholder.jpg'></td>";
+                    } else {
+                        // Use display_image.php to render images
+                        echo "<td><img src='inc/display_image.php?id=$identificador' width='100' height='100' style='object-fit:cover;'></td>";
+                    }
+                }
+            }
+
+            // Add delete button
+            echo "
+                <td>
+                    <a href='crud/eliminar.php?tabla=$tabla&Identificador=$identificador'>
+                        <button class='eliminar'>X</button>
+                    </a>
+                </td>
+            ";
+            echo "</tr>";
+        }
+    } else {
+        echo "<tr><td colspan='10'>No records found</td></tr>";
+    }
+} else {
+    echo "<tr><td colspan='10'>Table parameter is missing</td></tr>";
 }
 
-
-$conexion->close();										// Cierro la conexión de base de datos
+// Close the database connection
+$conexion->close();
 ?>
-
