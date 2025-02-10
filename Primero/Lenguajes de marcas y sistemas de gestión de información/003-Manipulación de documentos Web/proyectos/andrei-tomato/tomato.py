@@ -7,12 +7,12 @@ from datetime import datetime, timedelta
 
 # Path for hourly data file
 data_paths = {
-    "hourly": "E:/xampp/htdocs/dam/Primero/Lenguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/proyectos/metricas/carga_hourly.txt",
+    "hourly": "carga_hourly.txt",
 }
 
 # Path for plot folder
 plot_folders = {
-    "hourly": "E:/xampp/htdocs/dam/Primero/Lenguajes de marcas y sistemas de gestión de información/003-Manipulación de documentos Web/proyectos/metricas/img/hourly",
+    "hourly": "img/hourly",
 }
 
 # Create the plot folder if it doesn't exist

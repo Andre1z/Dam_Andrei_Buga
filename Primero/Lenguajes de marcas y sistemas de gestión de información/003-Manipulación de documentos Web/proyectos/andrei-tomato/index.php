@@ -325,7 +325,7 @@ $images = $loggedIn ? getImages($chartFolders[$selectedType]) : [];
     <?php if ($loggedIn): ?>
         <!-- Header -->
         <div class="header">
-            <div class="app-name"><img src="https://jocarsa.com/static/logo/tomato.png">jocarsa | Tomato</div>
+            <div class="app-name"><img src="https://jocarsa.com/static/logo/tomato.png">andrei | Tomato</div>
             <a href="index.php?action=logout" class="logout-button">Cerrar Sesión</a>
         </div>
 
