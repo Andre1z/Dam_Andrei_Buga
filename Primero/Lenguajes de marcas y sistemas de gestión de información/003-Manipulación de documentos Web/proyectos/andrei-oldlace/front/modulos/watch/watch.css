@@ -1,0 +1,150 @@
+/* mac.css */
+
+/* Light Mode (Default) */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #007aff;
+    --button-hover-bg: #005bb5;
+    --back-button-bg: #6c757d;
+    --back-button-hover-bg: #5a6268;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --button-bg: #1e90ff;
+    --button-hover-bg: #007acc;
+    --back-button-bg: #4a4a4a;
+    --back-button-hover-bg: #3a3a3a;
+}
+
+/* Apply Variables */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: var(--text-color); /* Use CSS variable */
+}
+
+h4 {
+    font-size: 1.5em;
+    color: var(--text-color); /* Use CSS variable */
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Use CSS variable */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Flexbox Container for Buttons */
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center; /* Align buttons vertically */
+    margin-top: 20px; /* Space above the buttons */
+}
+
+/* Buy Button Styling */
+.buy-button {
+    background-color: var(--button-bg);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Back Button Styling */
+.back-button {
+    background-color: var(--back-button-bg);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--back-button-hover-bg);
+}
+
+/* Price Styling */
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--text-color); /* Use CSS variable */
+    margin-left: 10px; /* Space between button and price */
+}
+
+#themeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#themeToggle:hover {
+    background-color: var(--button-hover-bg);
+}
+/* Flexbox Container for Apple Watches */
+.watch-container {
+    display: flex;
+    gap: 20px; /* Space between the watches */
+    justify-content: center; /* Center the items horizontally */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin-top: 20px;
+}
+
+/* Individual Watch Item */
+.watch-item {
+    flex: 1; /* Allow items to grow and take equal space */
+    max-width: 45%; /* Limit the width of each item */
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .watch-item {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+}

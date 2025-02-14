@@ -1,0 +1,29 @@
+#destacados{
+    display:grid;
+    grid-template-columns:auto auto;
+}
+#destacados article{
+    min-height:300px;
+    text-align:center;
+    box-sizing:border-box;
+    padding:40px;
+    background-position:center !important;
+    color:white;
+}
+@media screen and (max-width:800px) {
+    #destacados{
+        display:block;
+    }
+}
+#destacados article button{
+    padding:20px;
+    border:2px solid white;
+    border-radius:40px;
+    width:200px;
+    background:none;
+    color:white;
+}
+#destacados article button a{
+    text-decoration:none;
+    color:inherit;
+}

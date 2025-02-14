@@ -17,6 +17,6 @@
 <link rel="icon" type="image/svg+xml" href="img/logo.svg">
 <meta name="description" content="<?php echo $datosweb['descripcion']; ?>">
 <meta name="robots" content="index,follow">
-<meta name="keywords" content="<?php echo $datosweb['palabrasclave']; ?>">
-<meta name="author" content="<?php echo $datosweb['autor']; ?>">
+<!--<meta name="keywords" content="<<?php echo $datosweb['palabrasclave']; ?>">
+<meta name="author" content="<?php echo $datosweb['autor']; ?>">-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

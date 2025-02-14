@@ -2,9 +2,9 @@
 
 	$conexion = mysqli_connect(
 			"localhost", 
-			"oldlace", 
-			"oldlace", 
-			"oldlace"
+			"andrei", 
+			"Oldlace.123", 
+			"proyectoapple"
 		);		
 
 ?>

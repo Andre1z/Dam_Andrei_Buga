@@ -8,7 +8,6 @@ if (isset($_GET['tabla'])) {
 
     // Pagination logic
     $offset = isset($_SESSION['pagina']) ? $_SESSION['pagina'] * 10 : 0;
-
     // Main query to fetch data from the specified table
     $peticion = "
         SELECT * 

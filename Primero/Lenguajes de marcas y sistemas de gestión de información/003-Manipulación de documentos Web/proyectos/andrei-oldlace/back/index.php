@@ -1,39 +1,49 @@
 <?php
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
 
-	// Enrutador del back de la aplicación que sirve los datos que se piden en función de la URL
-	
-	include "inc/error.php";								// Configuración de mensajes de error				
-	include "Classes/ConexionBD.php";					// Importo la clase de conexión a base de datos
-	include "../config.php";																			
-	header('Content-Type: application/json');			// Indico que este archivo devuelve json
-		
-	$conexion = new ConexionBD($dbservidor, $dbusuario, $dbcontrasena, $dbbasededatos);							// Creo una nueva instancia de la conexion
+    header('Content-Type: application/json');
 
-	if(isset($_GET['tabla'])){								// Si la URL me envía una tabla
+    function pideAlgo($tabla) {
+        $conexion = mysqli_connect(
+            "localhost",
+            "andrei",
+            "Oldlace.123",
+            "proyectoapple"
+        );
 
-		echo $conexion->pideAlgo($_GET['tabla']);		// Llamo al método correspondiente del objeto
-	}
-	if(isset($_GET['busca'])){								// Si la URL me envía una búsqueda
-		echo $conexion->buscaAlgo(					
-				$_GET['busca'],
-				$_GET['campo'],
-				$_GET['dato']
-			);														// Llamo al método correspondiente del objeto
-	}
-	if(isset($_GET['envio'])){
-		$datos = json_decode($_GET['envio'], true);
-		$archivo = '../basededatos/pedidos/'.date('U').'.json';
-		$datosbonitos = json_encode($datos, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-		file_put_contents($archivo, $datosbonitos);
-		echo "ok";
+        if (!$conexion) {
+            die(json_encode(["error" => "Connection failed: " . mysqli_connect_error()]));
+        }
 
-	}
-	if(isset($_GET['producto'])){
-		echo file_get_contents("../basededatos/productos/".$_GET['producto'].".json");
-		
-	}
-	
+        // Prevent SQL injection
+        $tabla = mysqli_real_escape_string($conexion, $tabla);
+        $peticion = "SELECT * FROM `$tabla`;"; // Use backticks for table names
+
+        $resultado = mysqli_query($conexion, $peticion);
+        if (!$resultado) {
+            die(json_encode(["error" => "Query error: " . mysqli_error($conexion)]));
+        }
+
+        $json = [];
+        while ($fila = mysqli_fetch_array($resultado, MYSQLI_ASSOC)) {
+            foreach ($fila as $key => $value) {
+                if (is_string($value) && strlen($value) > 300) {
+                    $fila[$key] = base64_encode($value);
+                }
+            }
+            $json[] = $fila;
+        }
+
+        return json_encode($json); // ✅ Fix: Return the JSON response
+    }
+
+    // ✅ Fix: Check if "tabla" is set before using it
+    $tabla = isset($_GET['tabla']) ? $_GET['tabla'] : '';
+    if (!$tabla) {
+        die(json_encode(["error" => "Missing 'tabla' parameter"]));
+    }
+
+    echo pideAlgo($tabla);
 ?>
-	
-	
-

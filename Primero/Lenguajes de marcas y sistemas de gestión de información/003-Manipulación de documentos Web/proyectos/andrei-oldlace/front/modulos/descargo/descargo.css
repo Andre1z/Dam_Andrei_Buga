@@ -1,0 +1,25 @@
+section{
+    background-color:aliceblue;
+    margin-bottom: 10px;
+}
+/* Grid Layout for Images */
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px; /* Space between images */
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
