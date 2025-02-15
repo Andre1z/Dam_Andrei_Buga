@@ -9,7 +9,7 @@
 include "config/config.php";                          // Traigo la conexión a la base de datos
 
 $peticion = "SHOW TABLES in ".$base;			// Quiero todas las tablas de la base de datos
-//echo $peticion;
+// echo $peticion;
 $resultado = $conexion->query($peticion);				// Ejecuto la petición contra la base de datos
 
 while ($fila = $resultado->fetch_assoc()) {			// Para cada uno de los resultados

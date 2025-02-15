@@ -1,0 +1,22 @@
+.contenedor{
+    background-color: whitesmoke;
+    color:lightslategray;
+}
+.contenedor #post{
+    text-align: center;
+}
+#post h2{
+    font-size:30px;
+    margin: 10px;
+}
+#post p{
+    font-size:20px;
+    margin:10px;
+}
+#post img{
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px; /* Space between images */
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 1024px; /* Set a fixed height for all images */
+}

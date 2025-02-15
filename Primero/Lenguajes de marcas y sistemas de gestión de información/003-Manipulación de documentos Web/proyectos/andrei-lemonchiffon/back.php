@@ -57,7 +57,7 @@ function fetch_emails($mailbox, $folder, &$uniqueEmails) {
 $supercorreos = [];
 $uniqueEmails = []; // Array to store unique emails
 
-foreach (fetch_emails($hostname, "INBOX", $uniqueEmails) as $correo) {
+forEach (fetch_emails($hostname, "INBOX", $uniqueEmails) as $correo) {
     $supercorreos[] = $correo;
 }
 
