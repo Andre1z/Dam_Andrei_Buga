@@ -11,7 +11,7 @@ include "config/config.php";                          // Traigo la conexión a l
 $peticion = "
 	UPDATE ".$_GET['tabla']."
 	SET ".$_GET['columna']." = '".$_GET['contenido']."'
-	WHERE Identificador = ".$_GET['identificador']."
+	WHERE identificador = ".$_GET['identificador']."
 "; 
 
 $resultado = $conexion->query($peticion);

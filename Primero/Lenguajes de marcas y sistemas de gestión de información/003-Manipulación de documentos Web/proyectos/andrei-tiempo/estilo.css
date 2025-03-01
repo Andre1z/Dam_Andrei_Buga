@@ -1,0 +1,73 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif; /* Fuente principal */
+  background-color: #f0f8ff; /* Color de fondo azul claro */
+  display: flex; /* Usa flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Altura completa de la ventana */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Contenedor principal para la aplicación del tiempo */
+.weather-container {
+  background: #fff; /* Fondo blanco */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center; /* Alinea el texto al centro */
+  width: 600px; /* Ancho fijo del contenedor */
+}
+
+/* Estilos para el título principal */
+h1 {
+  margin-bottom: 20px; /* Espacio inferior para separar del formulario */
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex; /* Usa flexbox para alinear los elementos */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  margin-bottom: 20px; /* Espacio inferior para separar del resultado */
+}
+
+/* Estilos para el campo de entrada de texto */
+input {
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  width: 70%; /* Ancho del campo de entrada */
+}
+
+/* Estilos para el botón de enviar */
+button {
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  background: #007bff; /* Color de fondo azul */
+  color: #fff; /* Texto blanco */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor a una mano */
+  margin-left: 10px; /* Espacio a la izquierda para separar del campo de entrada */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+  background: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Área donde se mostrarán los resultados del tiempo */
+#weatherResult {
+  margin-top: 20px; /* Espacio superior para separar del formulario */
+}
+
+/* Estilos para el ícono del tiempo */
+.weather-icon {
+  width: 50px; /* Ancho del ícono */
+  height: 50px; /* Altura del ícono */
+}
+
+/* Estilos para la información del tiempo */
+.weather-info {
+  font-size: 18px; /* Tamaño de fuente */
+  margin: 10px 0; /* Espaciado vertical */
+}
