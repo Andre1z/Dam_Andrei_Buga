@@ -95,10 +95,20 @@
         <section>
             <article id="post">
                 <h2>9.- Aplicación Blue</h2>
-                <p>Por emepezar la aplicación tiene la siguiente estructura</p>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
                 <img src="img/estructura_blue.jpg">
                 <p>Esta aplicación de Blue tiene como objetivo la creación de gráficos: Gráficos de barras, Grafico de líneas, Grafico de tarta, Gráficos de anillo, Grafico de barras apiladas y Grafico de Radial. Estos gráficos se generan mediante el archivo charts.js que esta en la carpeta js. Los usuarios para crearlos hemos generado con el archivo init_db.php, una database.sqlite donde allí hemos guardado todos los usuarios registrados, para que puedan iniciar sesión, hemos usado el archivo login.php que hace una petición a la base de datos que seleccione la tabla usuarios, dentro de esa tabla comprueba si el usuario existe, luego comprueba si la contraseña del usuario es correcta, si lo es le deja entrar, en caso contrario no le deja entrar. Los gráficos al crearse se crean como SVGs, register.php tiene la característica de crear en la base de datos nuevos usuarios con contraseña. En todos los archivos hemos usado variables ($username, $name, $email, $password, $confirm_password, $error...), también hemos usado los booleanos (if, else) para controlar "Si el usuario y la contraseña son correctos inicia sesión, en caso contrario error." En los archivos JS hemos usado functions y constantes, las funciones para declarar por ejemplo cada tipo de grafico y dentro de esas funciones las constantes, que hemos usado para declarar diferentes opciones.</p>
                 <img src="img/blue.jpg">
+            </article>
+        </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>10.- Aplicación Converter</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_converter.jpg">
+                <p>Esta aplicacion de converter tiene como objetivo convertir una imagen entre los siguientes formatos: JPEG, PNG, BMP, GIF, WEBP, TIFF. Es decir si nosotros tenemos una imagen con extension webp con esta aplicación hecha en Python podremos convertirla a el formato que nosotros deseemos entre los que hay. La Apliación hecha en Python y compilada a un archivo ejecutable para Windows (.exe) esta hecha con las siguientes caracteristicas. 1.- Primero de todo hemos importado la libreria OS para que cuando nosotros le demos clic a seleccionar un archivo nos detecte la carpeta donde esta el archivo seleccionado, hemos usado la libreria tkinter para hacer un GUI de una manera muy simple, y por ultimo hemos usado la libreria PIL hemos importado Image para que nosotros podamos realizar esas conversiones de archivos de imagen. Hemos creado funciones para que el programa detecte cuando arrastramos una imagen y detecte de de que ubicacion la hemos arrastrado, hemos usado variables globlas, para la ruta de entrada, hemos definido la ruta de salida, hemos usado if, else para comprobar si la funcion arranca entonces se ejecuta si no da error y no continua. Hemos usado estructuras de control como try except para controlar si por ejemplo tenemos instalado una libreria entonces, el programa continua sin dar algun error. Esta aplicacion fue creada en Windows 10/11 y se puede utilizar tanto en Windows 10 o 11. Ya que hemos compilado el python a un .exe </p>
+                <video controls="" autoplay="" src="videos/converter.mp4" width="1024" height="600"></video>
             </article>
         </section>
     </div>

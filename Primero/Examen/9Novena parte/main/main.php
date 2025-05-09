@@ -95,7 +95,7 @@
         <section>
             <article id="post">
                 <h2>9.- Aplicación Blue</h2>
-                <p>Por emepezar la aplicación tiene la siguiente estructura</p>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
                 <img src="img/estructura_blue.jpg">
                 <p>Esta aplicación de Blue tiene como objetivo la creación de gráficos: Gráficos de barras, Grafico de líneas, Grafico de tarta, Gráficos de anillo, Grafico de barras apiladas y Grafico de Radial. Estos gráficos se generan mediante el archivo charts.js que esta en la carpeta js. Los usuarios para crearlos hemos generado con el archivo init_db.php, una database.sqlite donde allí hemos guardado todos los usuarios registrados, para que puedan iniciar sesión, hemos usado el archivo login.php que hace una petición a la base de datos que seleccione la tabla usuarios, dentro de esa tabla comprueba si el usuario existe, luego comprueba si la contraseña del usuario es correcta, si lo es le deja entrar, en caso contrario no le deja entrar. Los gráficos al crearse se crean como SVGs, register.php tiene la característica de crear en la base de datos nuevos usuarios con contraseña. En todos los archivos hemos usado variables ($username, $name, $email, $password, $confirm_password, $error...), también hemos usado los booleanos (if, else) para controlar "Si el usuario y la contraseña son correctos inicia sesión, en caso contrario error." En los archivos JS hemos usado functions y constantes, las funciones para declarar por ejemplo cada tipo de grafico y dentro de esas funciones las constantes, que hemos usado para declarar diferentes opciones.</p>
                 <img src="img/blue.jpg">
