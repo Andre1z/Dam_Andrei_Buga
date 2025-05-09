@@ -111,6 +111,16 @@
                 <video controls="" autoplay="" src="videos/converter.mp4" width="1024" height="600"></video>
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>11.- Aplicación Hoteles</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_hoteles.jpg">
+                <p>Esta aplicacion de hoteles tiene como objetivo ayudar a los hoteles para poder gestionar mejor las habitaciones que tienen libres, o no, por empezar el administrador de la aplicación debera dar de alta a los trabajadores mediante un formulario de registro, en ese formulario le pedira que ingrese un usuario y una contraseña, el usuario registrado se guardara en una base de datos MySQL la contraseña se guardara de forma hasheada para que solo el trabajador que le han hecho la "cuenta" para gestionar las habitaciones del hotel sepa cual es la contraseña real para iniciar sesion. Cuando inicia sesion con usuario y contraseña, lo que hace internamente el programa es: 1.- Irse a la base de datos. 2.- Mostrar en la tabla usuarios si el usuario y la contraseña existe. 3.- Si el usuario y la contraseña son correctos lo deja pasar al inicio, pero si son incorrectos le pedira que vuelva a introducir los datos de forma correcta. Cuando este en el inicio podra agregar una habitación y decir si esta disponible o no, podra poner el precio de la habitación, podra poner una descripcion sobre la habitación y podra decir de que tipo de habitación se trata. Este proceso internamente es un Create en la tabla habitaciones, y pone todos los datos que haya puesto el trabajador. Entonces si pulsa en ver habitaciones, podra ver todas las habitaciones que haya creado, desde alli tambien se puede eliminar y editar las habitaciones. Para la creacion de esta aplicacion hemos usado Microsoft VSC en Windows 11, hemos usado diferentes variables ($sql, $room_number, $room_type, $price, $description)</p>
+                <img src="img/hoteles.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
