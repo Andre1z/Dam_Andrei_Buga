@@ -201,6 +201,16 @@
                 <video controls="" autoplay="" src="videos/darkmagenta.mp4" width="1024" height="600"></video>
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>20.- Aplicación DarkOrchid</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_darkorchid.jpg">
+                <p>Esta aplicación de Darkorchid esta hecha en php, sirve para realizar reuniones con audio (tipo Zoom) tiene un chat integrado para poder escribir en caso de no disponer de micrófono, para acceder a esta aplicación, primero nos tenemos que registrar, (El usuario se guardara en una base de datos llamada "users.db", donde allí se guardara el nombre de usuario y también la contraseña para el mismo usuario "Que estará hasheada"), entonces cuando el usuario se haya registrado en la aplicación, entonces deberá ir al login para poder entrar con su cuenta dentro de la aplicación, por fin dentro el usuario deberá iniciar llamada, al iniciar llamada (En caso que tenga webcam, y micrófono se iniciar correctamente, pero cuando no tiene cámara ni micrófono, no se podrá iniciar la llamada, solo podrá escribir en el chat.) El proyecto fue desarrollado por módulos, es decir cada carpeta tiene sus módulos dentro /assests, /css, /database, /js y en la raíz encontramos Index.php, login.php, logout.php y register.php. Cada archivo tiene el código, bien estructurado, usando imports para que el archivo principal no sea tan grande, también poniendo docstrings y comentarios. El index.php para poder acceder hemos puesto una función, que compruebe si el usuario a iniciado sesion, en caso contrario lo redirige al login, pero , si el usuario no tiene cuenta, abajo del formulario de inicio de sesión tiene  un botón para irse al formulario de registro.</p>
+                <img src="img/darkorchid.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
