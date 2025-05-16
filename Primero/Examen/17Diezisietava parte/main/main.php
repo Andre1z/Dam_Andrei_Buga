@@ -231,6 +231,16 @@
                 <img src="img/grey.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>23.- Aplicación Hotpink</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_hotpink.jpg">
+                <p>Esta aplicación de HotPink esta hecha en php, sirve para, primero de todo el archivo (nidex.php) se conecta a la base de datos de MySQL para sacar información de la base de datos llamada (proyectoapple), para conectarnos a la base de datos con el usuario, contraseña y usaremos la tabla de categoriras para generar cuatro archivos (salida.csv, salida.json, salida.sqlite3 y salida.xml), que hemos convertido la información de la tabla "categoraias" a diferentes, formatos y luego hemos usado todos esos archivos para incrustar la información de cada archivo en index.php para poder leerla. El proyecto es muy simple solo hay dos archivos, uno "andrei_hotpink.php" que se conecta a la base de datos y el index.php que saca la información y convierte toda la tabla SQL a scv, json, xml, sqlite3. Todos los archivos contienen comentarios, variables, funciones, booleanos. </p>
+                <img src="img/hotpink.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
