@@ -251,6 +251,16 @@
                 <img src="img/khaki.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>25.- Aplicación Lavenderblush</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_lavenderblush.jpg">
+                <p>Esta aplicación de lavenderblush esta hecha en php, sirve para la creación, edición y almacenamiento de "clases" (estructuras o esquemas), a través de una interfaz de arrastrar y soltar. Además, permite exportar dichas clases a archivos PHP mediante el script "save_classes.php", Para poder usar la aplicación primero de todo necesitas una cuenta, se lo tienes que comunicar al administrador para que te cree una cuenta, con usuario y contraseña, esa cuenta se guardara en una base de datos (dentro del proyecto) en formato SQLite (data.sqlite) Cuando el usuario tenga cuenta y haya iniciado sesión, entonces el, podrá crear proyectos (dandole el nombre que quiera), el usuario al seleccionar ese proyecto deberá darle al botón de "Añadir clase" para crear una clase entonces el usuario podrá duplicar esa misma clase o bien podrá eliminarla, todas las clases se guardan automáticamente en la base de datos SQLite, (Se nos muestra un alert que nos informa que el ID X se ha guardado correctamente). El código esta muy bien estructurado tiene dos carpetas en la raiz (llamdos css/ y scripts/ en la carpeta de css se encuentra todo el estilo de la aplicación, y en el js se encuentra toda la lógica en JavaScript para toda la aplicación), la base de datos (data.sqlite) se encuentra en la raíz. Todos los códigos tienen comentarios para guiarnos. </p>
+                <img src="img/lavenderblush.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
