@@ -321,6 +321,16 @@
                 <img src="img/skyblue.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>32.- Aplicación Slategrey</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_slategrey.jpg">
+                <p>Este proyecto es un editor multimedia web que permite construir, visualizar y editar una línea de tiempo compuesta por clips de video, audio e imágenes de forma concatenada. La aplicación se inspira en editores profesionales (como Adobe Premiere o DaVinci Resolve), ofreciendo funcionalidades como: Arrastrar y soltar archivos (clips) en un panel de medios. Un “time display” interactivo que actúa como scrubber mediante una aguja roja, mostrando el tiempo actual en formato mm:ss (con separación para facilitar la lectura). El código tiene comentarios y docstrings para que sepamos de lo que va cada cosa.</p>
+                <img src="img/slategrey.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
