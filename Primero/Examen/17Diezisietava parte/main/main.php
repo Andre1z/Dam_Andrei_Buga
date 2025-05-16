@@ -331,6 +331,16 @@
                 <img src="img/slategrey.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>32.- Aplicación Templating</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_templating.jpg">
+                <p>Este proyecto es un sistema básico de gestión de un blog desarrollado en PHP. Se utiliza una base de datos SQLite (.db) para almacenar las entradas y un motor de plantillas personalizado para separar la lógica del negocio de la presentación visual. La arquitectura está pensada para ser simple y modular, facilitando futuras extensiones y mejoras. El archivo `index.php` es el punto de entrada. Desde ese archivo se separa la lógica del negocio (en `src/Blog.php`) y se renderizan las vistas mediante el motor de plantillas (`motorplantillas.php`).Las plantillas se encuentran en la carpeta `templates/`, donde se pueden personalizar los elementos visuales (e.g., `title`, `h1`, `h2`, etc.) utilizando variables dinámicas. Los estilos se definen en `assets/css/styles.css`, que puedes modificar para cambiar la apariencia del blog. Todos los archivos tienen comentarios</p>
+                <img src="img/templating.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
