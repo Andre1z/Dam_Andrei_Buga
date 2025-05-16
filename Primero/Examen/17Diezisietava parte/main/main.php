@@ -181,6 +181,16 @@
                 <img src="img/valumate.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>18.- Aplicación Consumo</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_consumo.jpg">
+                <p>Esta aplicación de para medir el consumo fue creada en Python, para saber cuanto consumen las aplicaciones si se están ejecutándose, con este proyecto sirve para ver que aplicaciones consumen mas energía y cuales menos, para luego saber cuando vayamos a desarrollar una aplicación tener en cuenta el consumo energético que puede consumir. El proyecto solo tiene una carpeta llamada main, donde allí están los archivos principales del proyecto, todos los archivos al principio tienen un docstring con la información importante de que va el archivo, todos los archivos se ha usado la estructura de Programación Orientada a Objetos, el archivo que debemos ejecutar para medir los procesos es (process_detector.py). Este archivo lo que hace es detectar todos los Pid de procesos que están ejecutados en ese momento, este script de Python tiene se actualiza dinamicamente, es decir (Si cerramos un proceso, entonces se nos mostrara el numero de proceso y el nombre de la aplicación que se ha terminado), cuando queramos finalizar la ejecución del programa pulsamos cualquier tecla para parrarlo y que nos diga el total de MWh que se han consumido durante la ejecución.</p>
+                <video controls="" autoplay="" src="videos/consumo.mp4" width="1024" height="600"></video>
+            </article>
+        </section>
     </div>
 </main>
 <style>
