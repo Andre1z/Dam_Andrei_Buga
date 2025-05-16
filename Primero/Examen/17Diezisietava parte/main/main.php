@@ -311,6 +311,16 @@
                 <img src="img/salmon.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>31.- Aplicación Skyblue</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_skyblue.jpg">
+                <p>Andrei SkyBlue es una web dinamica hecha con PHP que utiliza un custom template (motorplantilla) para renderizar dinamicamente el contendio del archivo JSON. La aplicacion separa la logica, la presentación, la información, haciendo que el sitio se facil de actualizar y escalar. El proyecto renderiza paginas como la pagina principal, "Quienes somos", la pagina de contacto, que incluye la funcionalidad de desuscribirse. El codigo esta bien organizado, teniendo docstrings, comentarios, variables, funciones, delcaraciones, constantes. </p>
+                <img src="img/skyblue.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
