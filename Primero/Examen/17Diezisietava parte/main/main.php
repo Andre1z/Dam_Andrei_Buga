@@ -241,6 +241,16 @@
                 <img src="img/hotpink.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>24.- Aplicación Khaki</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_khaki.jpg">
+                <p>Esta aplicación de khaki esta hecha en php, sirve para añadir eventos dentro de un calendario para que nos podamos organizar mejor, todos los eventos que se creen se iran a una base de datos, que tenemos la conexion a la base de datos mediante el archivo (db_config.php), para conectarnos debemos poner bien el nombre de host, el nombre de usuario, la contraseña del usuario, y el nombre de la base de datos al que nosotros nos tenemos que conectar para que los podamos leer y crear los registros. El codigo, esta muy bien estructurado, hay unas 7 carpetas en el proyecto, y solo el index.php esta en la raiz del proyecto, se han usado imports para entrelazar los diferentes archivos usando rutas relativas (ejemplo: ../css/style.css), para la conexion de la base de datos se a usado variables para definir la conexion a la base de datos para luego poder import esas variables a los archivos que necesiten crear o leer los registro de esa BD, se han usado boleeanos para la logica. En esta aplicación no se necesita tener una cuenta, (Solo la conexion correcta a la BD.). </p>
+                <img src="img/khaki.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
