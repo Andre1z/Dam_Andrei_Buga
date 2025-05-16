@@ -191,6 +191,16 @@
                 <video controls="" autoplay="" src="videos/consumo.mp4" width="1024" height="600"></video>
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>19.- Aplicación DarkMagenta</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_darkmagenta.jpg">
+                <p>Esta aplicación de DarkMagenta esta hecha en Python y sirve para buscar y remplazar palabras/frases con cualquier extension (Que contenga texto). El funcionamiento de esta aplicación es muy simple, primero de todo debemos seleccionar un archivo para poder empezar a editarlo, entonces cuando lo hayamos hecho, en el apartado de buscar, ponemos la palabra que queremos buscar y pulsamos el boton de "Buscar Palabra" entonces nos saltara un mensaje diciendo "Se encontraron X coincidencia(s) para 'Y palabra'. O bien si no se han encontrado palabras "No se encontraron coincidencias para "X palabra"." Entonces si queremos remplazar una/varias palabras del documento entonces ponemos la palabra que queremos que se remplaze en el otro apartado de la derecha, cuando hayamos puesto la palabra entonces pulsamos el boton de "Aplicar Remplazo" entonces nos saldra un mensaje "El reemplazo se realizó correctamente.", cuando tengamos la palabra remplazada, pulsamos en "Guardar cambios" para guardar. Al hacerlo, nos saltara un mensaje "El archivo se ha guradado exitosamente." Tambien en la aplicación tenemos un boton para poder cambiar la interfaz en modo oscuro o claro. El archivo principal tiene al principio del archivo, un docstring con la información del archivo. La aplicación fue desarrollada en Python usando la libreria Tkinter para hacer la aplicación con GUI (Grafic User Interface). La hemos desarrollado usando programación orientada a objetos. Con clases, funciones, variables. Esta aplicación la hemos convertido como ejecutable (.exe) para que el usuario no tenga que depender de tener instalado Python en su equipo.</p>
+                <video controls="" autoplay="" src="videos/darkmagenta.mp4" width="1024" height="600"></video>
+            </article>
+        </section>
     </div>
 </main>
 <style>
