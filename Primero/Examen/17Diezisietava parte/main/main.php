@@ -291,6 +291,16 @@
                 <video controls="" autoplay="" src="videos/pdfphp.mp4" width="1024" height="600"></video>
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>29.- Aplicación Pink</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_pink.jpg">
+                <p>Esta aplicación de pink esta hecha en html, esta aplicacion de pink permite visualizar los tipos de elementos, el codigo tiene esta bien comentado, se usan variables, constantes, funciones, console.logs. En el archivo HTML se ha importado los scripts y el estilo, tambien contiene comentarios de una sola linea, una etiqueta meta name="viewport"</p>
+                <img src="img/pink.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
