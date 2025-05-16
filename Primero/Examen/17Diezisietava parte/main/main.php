@@ -261,6 +261,16 @@
                 <img src="img/lavenderblush.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>26.- Aplicación Mintcream</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_mintcream.jpg">
+                <p>Esta aplicación de mintcream esta hecha en php, esta aplicacion de mintcream es un foro de comunidad, que sirve para conversar , y tener discusiones con otros usuario, pero para poder participar en foro, los nuevos usuarios se pueden registrarse mediante el formulario de registro y luego iniciar sesion para participar en el foro. Los usuarios autentificados pueden crear temas, hilos y publicaciones. Al adjuntar imagenes, el nombre del archivo se almacena en la base de datos, y la imagen se guarda en la carpeta "uploads", al pulsar en una imagen de una publicación, se abrira un modal centrado en la pantalla que permite verla en mayor detalle. Los superadministradores pueden gestionar usuarios (crear, actualizar roles y elimiar) desde el panel de administración. El proyecto esta muy bien estructurado, (bloques/, css/, databases/, inc/ y uploads/) donde cada archivo tiene comentarios, algun que otro docstring, boleanos, variables, conexiones a la base de datos, javascript, funciones. Cuando hayamos iniciado sesion debemos seleccionar el tema que queramos ver las discusiones del foro, luego de los temas, tendremos que seleccionar un hilo, cuando hayamos seleccionado un hilo, entonces nos aparecera el chat donde podremos poner comentarios, subir una imagen que nosotros queramos, darle reply a un usuario del foro, previsualizar una imagen con modal.</p>
+                <video controls="" autoplay="" src="videos/mintcream.mp4" width="1024" height="600"></video>
+            </article>
+        </section>
     </div>
 </main>
 <style>
