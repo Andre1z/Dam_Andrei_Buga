@@ -334,11 +334,21 @@
         <hr>
         <section>
             <article id="post">
-                <h2>32.- Aplicación Templating</h2>
+                <h2>33.- Aplicación Templating</h2>
                 <p>Por empezar la aplicación tiene la siguiente estructura</p>
                 <img src="img/estructura_templating.jpg">
                 <p>Este proyecto es un sistema básico de gestión de un blog desarrollado en PHP. Se utiliza una base de datos SQLite (.db) para almacenar las entradas y un motor de plantillas personalizado para separar la lógica del negocio de la presentación visual. La arquitectura está pensada para ser simple y modular, facilitando futuras extensiones y mejoras. El archivo `index.php` es el punto de entrada. Desde ese archivo se separa la lógica del negocio (en `src/Blog.php`) y se renderizan las vistas mediante el motor de plantillas (`motorplantillas.php`).Las plantillas se encuentran en la carpeta `templates/`, donde se pueden personalizar los elementos visuales (e.g., `title`, `h1`, `h2`, etc.) utilizando variables dinámicas. Los estilos se definen en `assets/css/styles.css`, que puedes modificar para cambiar la apariencia del blog. Todos los archivos tienen comentarios</p>
                 <img src="img/templating.jpg">
+            </article>
+        </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>34.- Aplicación Turquoise</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_turquoise.jpg">
+                <p>Esta aplicación web está desarrollada en PHP y utiliza SQLite para el almacenamiento de datos. La solución implementa: Sistema de autenticación de usuarios (login / registro). Un dashboard con información básica del usuario. Un panel de administración que permite gestionar dos tablas principales: Restaurantes, Reservas. Operaciones CRUD completas en cada una de las tablas: Crear, leer, actualizar y eliminar registros. Inserción de datos de ejemplo mediante scripts y archivo JSON. /public`: Contiene el frontend de la aplicación (index.php, archivos de vistas, CSS, JavaScript). `/config`: Archivos de configuración (por ejemplo, config.php). `/core`: Clases principales como Database.php. `/database`: Scripts para crear las tablas (create_restaurants_table.php, create_reservations_table.php), el archivo JSON con datos de ejemplo (sample_data.json) y el archivo de inserción de datos (insert_sample_data.php). Todo el código esta comentado y con algun docstring.</p>
+                <img src="img/turquoise.jpg">
             </article>
         </section>
     </div>
