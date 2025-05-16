@@ -211,6 +211,16 @@
                 <img src="img/darkorchid.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>21.- Aplicación Deeppink</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_deeppink.jpg">
+                <p>Esta aplicación de Deeppink esta hecha en php, sirve para realizar informes mediante una URL que tenemos que poner en la "casilla de introducir URL" Este informe que nos ha generado sirve para ver si esa pagina web, tiene "Titulo, una descripción del sitio, que tipo de contenido contiene, que palabras usa, cuantos y que etiquetas tiene (h1, h2 ,h3, h4, h5, h6), si contiene Robots.txt, si tiene un Sitemap.xml, si contiene imagenes y si la pagina tiene un favicon", podemos guarda el informe pulsando el boton de abajo "Guardar Informe". Este informe se nos guardara en una base de datos SQLite, donde allí también se guardaran los usuarios que se registren (Que deben tener cuenta para poder entrar en la pagina), tambien se guarda el usuario administrador, donde el puede ver todos los usuarios que estan registrados, o bien todos los informes que se han guardado a la base de datos. Cada archivo de código contiene un docstring inicial que sirve para entender de que va el archivo, tambien dentro del archivo podemos encotrar comentarios entre el código. DeepPink.php, se ha usado la programación orientada a objetos, mediante clases, funciones (Tanto publicas como privadas), variables. Cuando Iniciamos sesion podemos seleccionar el idioma con el que queremos iniciar (Ingles, Español, Frances, Aleman), dependiendo del idioma con el que nosotros iniciemos se nos pondra ese idioma en el index.php, gracias al archivo "translations.csv" que contiene todas las palabras claves de nuestra aplicación. </p>
+                <img src="img/deeppink.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
