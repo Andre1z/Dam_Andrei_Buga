@@ -281,6 +281,16 @@
                 <video controls="" autoplay="" src="videos/palegreen.mp4" width="1024" height="600"></video>
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>28.- Aplicación PdfPhp</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_pdfphp.jpg">
+                <p>Esta aplicación de pdfphp esta hecha en php, esta aplicacion de pdfphp permite generar calendarios y convertirlos en documentos PDF. El calendario se genera de forma dinamica para un rango de años (de 2025 a 2050) y permite navegar entre ellos usando los botones para avanzar o retroceder. Ademas, la aplicacion genera un PDF del calendario del año seleccionado, posicionando cada mes en una pagina separada. El diseño es minimalista con colores vivos. Tiene una estructura modular con clases PHP (CakndarGenerator, PDFGenerator)</p>
+                <video controls="" autoplay="" src="videos/pdfphp.mp4" width="1024" height="600"></video>
+            </article>
+        </section>
     </div>
 </main>
 <style>
