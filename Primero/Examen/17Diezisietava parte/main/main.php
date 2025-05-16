@@ -301,6 +301,16 @@
                 <img src="img/pink.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>30.- Aplicación Salmon</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_salmon.jpg">
+                <p>Esta aplicación de salmon esta hecha en php, esta aplicacion de salmon es una aplicacion web modular basada en PHP que sigue un patron de diseño MVC (Modelo-Vista-Controlador). Este proyecto simula una red social minimalista, permitiendo funcionalidades como autenticación de usuario, publicación de contenido, interacciones (Likes, comentarios), gestion de contactos, envio de mensajes y actualización de perfil. Los usuarios pueden iniciar sesion o registrarse, con formularios dedicados para cada funcion. Los usuarios autenticados pueden crear publicaciones, ver un feed con sus posts y los de sus contactos, dar "me gusta" y comentar en tiempo real. Cada usuario dispone de una seccion de "Mi perfil" donde puede actualizar su nombre de usuario y cambiar su contraseña de forma interactiva. Se permite conectar con otros usuarios, enviar mensajes y gestionar relaciones de amistad o seguimiento. Los archivos de codigos tienen comentarios bien estructurados. </p>
+                <img src="img/salmon.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
