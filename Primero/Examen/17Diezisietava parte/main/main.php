@@ -351,6 +351,16 @@
                 <img src="img/turquoise.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>35.- Aplicación Violet</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_violet.jpg">
+                <p>Chatbot andrei-violet es una aplicación web de mensajería y chat interactiva desarrollada en PHP y SQLite, con un diseño moderno y minimalista. La aplicación permite crear y gestionar múltiples sesiones de chat, almacenar la conversación en la base de datos y ofrece funcionalidades adicionales como eliminar o compartir un chat a través de opciones accesibles en un modal. Al ingresar a la interfaz, el sidebar muestra las sesiones de chat existentes. Usa el botón de "Nuevo chat" (botón con el signo "+") para iniciar una sesión nueva. Selecciona un chat del sidebar para visualizar su historial. Escribe un mensaje en el área principal; el sistema lo procesará y el chatbot responderá basado en disparadores. Cada sesión muestra un botón de opciones (representado por “···”) junto a la fecha, que te permitirá abrir un pop-up con las opciones de eliminar o compartir el chat. La funcionalidad de "Eliminar chat" se ocupa de borrar la sesión y todos sus mensajes de la base de datos. La opción "Compartir chat" permite copiar información de la sesión al portapapeles para facilitar su difusión. Todo el código esta comentado y con docstrings.</p>
+                <img src="img/violet.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
