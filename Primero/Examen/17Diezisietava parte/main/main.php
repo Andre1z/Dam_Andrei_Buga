@@ -221,6 +221,16 @@
                 <img src="img/deeppink.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>22.- Aplicación Grey</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_grey.jpg">
+                <p>Esta aplicación de Grey esta hecha en php, sirve para previsualizar archivos .ods para verlos en esta aplicación, es decir creamos un Excel ponemos los datos que necesitamos poner, entonces lo descargamos en formato .ods para poder añadirlo a la aplicación Grey. Esta aplicación se puede considerar como aplicación de gestión empresarial ya que un Excel lo pasamos de una manera muy simple o lo podemos previsualizar en nuestra pagina. Pero primero de todo debemos tener una cuenta, para crearnos una cuenta, al entrar en el index.php sin cuenta nos redirigirá automáticamente al login, entonces el en el login, abajo del formulario de inicio sesión tenemos un botón que si lo pulsamos, nos redirigirá al formulario para registrarnos, nos pedirá que pongamos un nombre de usuario, una contraseña y que confirmemos la misma contraseña (poner la misma contraseña de nuevo), entonces cuando hayamos pulsado el botón de "Registrar", nos redirigirá en la pagina del login para que nosotros podamos poner el usuario y la contraseña creados, este usuario no se guarda en una base de datos como tal, sino que se guarda en un archivo JSON, en el archivo JSON guarda el usuario y la contraseña (La contraseña Hasheada), en el login tambien podemos seleccionar el idioma para poder iniciar sesión (Español, Ingles, Chino, Coreano, Italiano, Frances, Alemán y Japones), cuando iniciemos sesión con el idioma seleccionado se nos pondrá toda la aplicación con ese idioma, gracias al archivo "translations.csv". Todos los archivos .ods que insertemos en la aplicación se nos guardaran en una base de datos SQLite con la información de cada columna. </p>
+                <img src="img/grey.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
