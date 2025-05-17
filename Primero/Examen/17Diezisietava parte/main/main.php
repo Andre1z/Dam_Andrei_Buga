@@ -361,6 +361,16 @@
                 <img src="img/violet.jpg">
             </article>
         </section>
+        <hr>
+        <section>
+            <article id="post">
+                <h2>36.- Aplicación Lightcoral</h2>
+                <p>Por empezar la aplicación tiene la siguiente estructura</p>
+                <img src="img/estructura_lightcoral.jpg">
+                <p>Este proyecto es una aplicación web interactiva para crear, editar y transformar gráficos vectoriales usando SVG (Scalable Vector Graphics). La herramienta permite dibujar formas básicas (Rectangulos, circulos, elipses, lineas, polilineas, poligonos y path) y propociona un conjunto de funcionalidades de edición, incluyendo: 1.- Modo de dibujo con vista previa en tiempo real. 2.- Herramientas de seleccion/edicion, que permiten mover los objetos arrastrandolos. 3.- Funcion de rotacion mediante un "rotate handle" (control visual) que permite girar el objeto en torno a un centro definido. 4.- Boton de eliminación que se muestra en modo de edicion para borrar la figura. 5.- Todo ello con una interfaz muy colorida y dinamica. Todo el codigo de este proyecto esta bien comentado. El proyecto esta bien estructurado, teniendo en cuenta los archivos que tenemos (js/, css/ html) el proyecto esta bien estructurado. Para el archivo JavaScript hemos usado la programacion orientada a objetos, para definir funciones como arrastrar la forma geometrica, eliminarla, rotarla, para poder ver la preview del objeto, para aplicarle color a la forma cuando se haga.</p>
+                <img src="img/lightcoral.jpg">
+            </article>
+        </section>
     </div>
 </main>
 <style>
